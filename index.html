@@ -482,6 +482,7 @@
     }
   </style>
 </head>
+<link rel="icon" type="image/x-icon" href="icon.png">
 
 <body>
   <canvas id="fireworksCanvas"
@@ -534,7 +535,7 @@
                 <div class="progress-container">
                   <div class="progress" id="progressBar"></div>
                 </div>
-                <span id="time">0:00 / 0:00</span>
+                <span id="time">0:00 / 4:24</span>
               </div>
             </div>
             <audio id="mantraAudio" src="Mantra.mp3" preload="auto"></audio>
@@ -815,9 +816,7 @@
     liveAnn.setAttribute('aria-live', 'polite');
     liveAnn.style.position = 'absolute'; liveAnn.style.left = '-9999px'; document.body.appendChild(liveAnn);
     setInterval(() => { liveAnn.textContent = showingEnglish ? greetEn.textContent : greetHi.textContent; }, 5000);
-
+  </script>
   </script>
 </body>
 </html>
-<a href="" rel="nofollow"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/468x60_adsterra_reff.gif" /></a>
-
