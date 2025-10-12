@@ -786,6 +786,14 @@
       if (!isNaN(durM)) timeText.textContent = `${curM}:${curS} / ${durM}:${durS}`;
     });
 
+    document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        mantra.pause();
+        mantra.currentTime = 0; // (optional) restart when reopened
+    }
+});
+
+
     document.querySelector('.progress-container').addEventListener('click', e => {
       if (!audio.duration) return;
       audio.currentTime = (e.offsetX / e.currentTarget.clientWidth) * audio.duration;
@@ -820,3 +828,4 @@
   </script>
 </body>
 </html>
+
